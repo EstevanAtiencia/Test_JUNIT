@@ -29,7 +29,7 @@ class OperacionTest {
     @Test
     @Throws(Exception::class)
     fun resta() {
-        assertEquals("-1", mOperacion!!.resta("3", "4"))
+        assertEquals("-1", mOperacion!!.resta("3", "2"))
     }
 
 }
