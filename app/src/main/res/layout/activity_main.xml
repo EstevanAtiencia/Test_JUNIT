@@ -20,14 +20,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Resultado" />
+
     <Button
-        android:onClick="suma"
-        android:text="Suma"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Suma" />
+
     <Button
-        android:onClick="resta"
-        android:text="resta"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="resta" />
 </LinearLayout>
