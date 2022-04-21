@@ -5,6 +5,9 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         init()
+        AppCenter.start(
+            application, "{Your app secret here}",
+            Analytics::class.java, Crashes::class.java
+        )
     }
 
     private fun init() {
